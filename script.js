@@ -42,13 +42,17 @@ function randomNumber(userGuess, computersNumber) {
     You are not limited to just these functions. Feel free to create a new function that may be called to help manage the flow of your code.
 */
 let currentNumber = 1
-
+let createGuess = () => {
+  currentNumber = Math.floor(Math.random() * 100) + 1;
+  };
 function startCompGuess(num) {
     // This should return a string that denotes the first guessed number
 
     // YOUR CODE ...
+    currentNumber = num;
+    createGuess();
     let guess = `Is your number ${currentNumber}?`;
-    
+    return guess;
 
 }
 

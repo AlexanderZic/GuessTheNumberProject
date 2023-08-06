@@ -2,16 +2,28 @@
     - Include a check to see if the user inputs a value out of scope of the desired values (1-100)
     - It should be compared to a variable named: numberToGuess
 */
+let functionCounter = 0 
 
 function randomNumber(userGuess, computersNumber) {
 
     // YOUR CODE BELOW
 
-
-
-
+    //const computersNumber = Math.floor(Math.random() * 100) + 1;
+        functionCounter++
+        if (userGuess < 1 || userGuess > 100) {
+          return "Please input a number between 1 and 100";
+        } else if (userGuess < computersNumber) {
+          return `Higher, that was guess number ${functionCounter}.`;
+        } else if (userGuess > computersNumber) {
+          return  `Lower, that was guess number ${functionCounter}.`;
+        } else {
+          return `The number was ${userGuess}! You got it in ${functionCounter} guesses!`;
+        }
     // YOUR CODE ABOVE
 };
+
+
+
 
 
 

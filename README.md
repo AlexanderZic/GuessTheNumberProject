@@ -1,5 +1,14 @@
 # Guess The Number
+psuedo code:
+  Part 1 - The user inputs a number and the computer will tell you if the guess is lower or higher or if correct. You will also have a counter to see the amount of guesses.
 
+  Part 2 - The user now picks a number and through buttons you direct the computer to guess if the number you are thinking of is higher, lower or correct.
+
+  This project was created through JavaScript, HTML and CSS.
+
+
+
+Instructions:
 Before starting to code this project, please find a partner and play this game together verbally for a few rounds.
 
 1. Alice thinks of a number

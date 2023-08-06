@@ -57,11 +57,25 @@ function startCompGuess(num) {
 }
 
 function compGuess(reply) {
-    /* 
+  currentNumber = reply; 
+  createGuess();
+
+  switch (reply) {
+    case "higher":
+      return `Your number is higher? Is it ${currentNumber}?`;
+    case "lower":
+      return `Your number is lower? Is it ${currentNumber}?`;
+    case "correct":
+      return `I knew it was ${currentNumber}!`;
+  }
+}
+
+  
+  /*  
     *   The parameter "reply" will either be passing "lower", "correct", or "higher". This should be considered when evaluating th elogic and response.
 
     This should return a string indicating the computers response.
     */
 
-}
+
 
